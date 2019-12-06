@@ -25,6 +25,8 @@ a {
     height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 html {
@@ -71,7 +73,7 @@ nav {
 
 header {
     background-color: #33a8dd;
-    height: 300px;
+    min-height: 300px;
     color: white;
     display: flex;
     justify-content: center;
@@ -89,6 +91,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 100px 0px;
+    height: 100%;
 }
 
 
@@ -98,31 +101,10 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     padding-bottom: 40px;
-    width: 80%;
+    width: 60%;
 
 }
 
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 
 
 
-/* DESKTOP */
-
-@media (min-width: 992px) {
-
-
-
-}

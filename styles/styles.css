@@ -22,7 +22,9 @@ a {
 }
 
   body {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -58,9 +60,10 @@ nav {
     text-decoration: none;
     margin: 30px 10px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
     padding-bottom: 5px;
+    transition: font-size .5s;
 }
 
 .nav-link:hover > a {
@@ -90,6 +93,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 50px 0px;
+    height: 100%;
 }
 
 
@@ -182,7 +186,11 @@ main {
     justify-content: space-evenly;
     color: white;
     background-color: var(--dark);
-    /* height: calc(100% - 500px); */
+}
+
+video {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -192,6 +200,11 @@ main {
 
 article {
     color: white;
+}
+
+.nav-link > a {
+    font-size: 24px;
+
 }
 
 }
